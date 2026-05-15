@@ -1,0 +1,430 @@
+Using Device: cuda
+Train: 10000 | Test: 1000
+
+Preparing basic test features...
+
+============================================================
+  TRAINING WITH 1% DATA
+============================================================
+
+[1/4] Basic CRF
+  F1: 0.5021  Accuracy: 0.5565
+
+[2/4] Latent Morphology CRF  (EM x 3)
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+  F1: 0.5091  Accuracy: 0.5577
+
+[3/4] BiLSTM
+                                                  
+    Epoch 1 Loss: 7.8753
+                                                  
+    Epoch 2 Loss: 7.2302
+                                                  
+    Epoch 3 Loss: 6.3589
+
+  F1: 0.0000  Accuracy: 0.9322
+
+[4/4] Transformer (mBERT)
+    Loading tokenizer: bert-base-multilingual-cased
+Loading widget...
+BertForTokenClassification LOAD REPORT from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+                                                          
+    Epoch 1 Loss: 13.2434
+                                                          
+    Epoch 2 Loss: 10.5140
+                                                          
+    Epoch 3 Loss: 8.7528
+  F1: 0.4156  Accuracy: 0.5143
+
+============================================================
+  TRAINING WITH 5% DATA
+============================================================
+
+[1/4] Basic CRF
+  F1: 0.7277  Accuracy: 0.7578
+
+[2/4] Latent Morphology CRF  (EM x 3)
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+  F1: 0.7150  Accuracy: 0.7316
+
+[3/4] BiLSTM
+                                                   
+    Epoch 1 Loss: 24.3101
+                                                   
+    Epoch 2 Loss: 4.9356
+                                                   
+    Epoch 3 Loss: 3.0114
+  F1: 0.0261  Accuracy: 0.9331
+
+[4/4] Transformer (mBERT)
+    Loading tokenizer: bert-base-multilingual-cased
+Loading widget...
+BertForTokenClassification LOAD REPORT from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+                                                            
+    Epoch 1 Loss: 48.8178
+                                                            
+    Epoch 2 Loss: 26.0646
+                                                            
+    Epoch 3 Loss: 16.8230
+  F1: 0.6911  Accuracy: 0.8202
+
+============================================================
+  TRAINING WITH 10% DATA
+============================================================
+
+[1/4] Basic CRF
+  F1: 0.7721  Accuracy: 0.8060
+
+[2/4] Latent Morphology CRF  (EM x 3)
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+  F1: 0.7805  Accuracy: 0.7921
+
+[3/4] BiLSTM
+                                                             
+    Epoch 1 Loss: 28.8600
+                                                             
+    Epoch 2 Loss: 5.9782
+                                                             
+    Epoch 3 Loss: 5.1049
+  F1: 0.0773  Accuracy: 0.9413
+
+[4/4] Transformer (mBERT)
+    Loading tokenizer: bert-base-multilingual-cased
+Loading widget...
+BertForTokenClassification LOAD REPORT from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+                                                            
+    Epoch 1 Loss: 81.9694
+                                                            
+    Epoch 2 Loss: 31.4162
+                                                            
+    Epoch 3 Loss: 19.6960
+  F1: 0.8034  Accuracy: 0.8807
+
+============================================================
+  TRAINING WITH 30% DATA
+============================================================
+
+[1/4] Basic CRF
+  F1: 0.8627  Accuracy: 0.8926
+
+[2/4] Latent Morphology CRF  (EM x 3)
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+  F1: 0.8536  Accuracy: 0.8707
+
+[3/4] BiLSTM
+                                                             
+    Epoch 1 Loss: 38.2056
+                                                             
+    Epoch 2 Loss: 12.1208
+                                                             
+    Epoch 3 Loss: 7.8728
+  F1: 0.4731  Accuracy: 0.9736
+
+[4/4] Transformer (mBERT)
+    Loading tokenizer: bert-base-multilingual-cased
+Loading widget...
+BertForTokenClassification LOAD REPORT from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+                                                              
+    Epoch 1 Loss: 167.4206
+                                                              
+    Epoch 2 Loss: 53.1288
+                                                              
+    Epoch 3 Loss: 32.5316
+  F1: 0.8816  Accuracy: 0.9194
+
+============================================================
+  TRAINING WITH 50% DATA
+============================================================
+
+[1/4] Basic CRF
+  F1: 0.8996  Accuracy: 0.9248
+
+[2/4] Latent Morphology CRF  (EM x 3)
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+  F1: 0.8933  Accuracy: 0.9148
+
+[3/4] BiLSTM
+                                                               
+    Epoch 1 Loss: 49.3354
+                                                               
+    Epoch 2 Loss: 14.1942
+                                                               
+    Epoch 3 Loss: 7.7853
+  F1: 0.6454  Accuracy: 0.9846
+
+[4/4] Transformer (mBERT)
+    Loading tokenizer: bert-base-multilingual-cased
+Loading widget...
+BertForTokenClassification LOAD REPORT from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+                                                              
+    Epoch 1 Loss: 217.6013
+                                                              
+    Epoch 2 Loss: 68.7038
+                                                              
+    Epoch 3 Loss: 38.9296
+  F1: 0.9148  Accuracy: 0.9470
+
+============================================================
+  TRAINING WITH 100% DATA
+============================================================
+
+[1/4] Basic CRF
+  F1: 0.9317  Accuracy: 0.9545
+
+[2/4] Latent Morphology CRF  (EM x 3)
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+  F1: 0.9320  Accuracy: 0.9502
+
+[3/4] BiLSTM
+                                                               
+    Epoch 1 Loss: 62.3874
+                                                               
+    Epoch 2 Loss: 15.2015
+                                                               
+    Epoch 3 Loss: 7.6859
+  F1: 0.7862  Accuracy: 0.9913
+
+[4/4] Transformer (mBERT)
+    Loading tokenizer: bert-base-multilingual-cased
+Loading widget...
+BertForTokenClassification LOAD REPORT from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+                                                              
+    Epoch 1 Loss: 367.6452
+                                                              
+    Epoch 2 Loss: 103.8221
+                                                              
+    Epoch 3 Loss: 51.4923
+  F1: 0.9474  Accuracy: 0.9724
+
+[ABLATION STUDY — 10% training data]
+
+  Config: Full Model
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+    F1 = 0.7805
+
+  Config: − Morphology
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+    F1 = 0.7777
+
+  Config: − Char N-grams
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+    F1 = 0.7773
+
+  Config: − Context
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+    F1 = 0.7483
+
+  Config: − Word Identity
+    EM iter 1/3 done
+    EM iter 2/3 done
+    EM iter 3/3 done
+    F1 = 0.7694
+
+
+FINAL RESULTS
+ Dataset %  Basic CRF F1  Basic CRF Acc  Latent CRF F1  Latent CRF Acc  BiLSTM F1  BiLSTM Acc  mBERT F1  mBERT Acc
+         1      0.502140       0.556546       0.509091        0.557688   0.000000     0.93218  0.415584   0.514279
+         5      0.727702       0.757825       0.714953        0.731551   0.026110     0.93314  0.691086   0.820196
+        10      0.772093       0.806032       0.780488        0.792095   0.077295     0.94130  0.803381   0.880740
+        30      0.862727       0.892621       0.853580        0.870688   0.473145     0.97356  0.881603   0.919351
+        50      0.899628       0.924834       0.893303        0.914782   0.645405     0.98456  0.914806   0.946996
+       100      0.931660       0.954535       0.932039        0.950194   0.786243     0.99128  0.947368   0.972355
+
+
+ABLATION STUDY (10% data)
+         Config       F1  Precision   Recall  F1 Drop
+     Full Model 0.780488   0.782288 0.778696 0.000000
+   − Morphology 0.777674   0.787936 0.767677 0.002813
+ − Char N-grams 0.777317   0.780556 0.774105 0.003171
+      − Context 0.748255   0.758491 0.738292 0.032233
+− Word Identity 0.769443   0.771218 0.767677 0.011045
+
+Saved to final_results_latent.csv and ablation_results.csv
+
+Plot saved to bengali_ner_results.png
+
+
+BEST MODEL PER DATA SIZE
+
+    1% => Latent Morph CRF        (F1=0.5091, Acc=0.5577)
+    5% => Basic CRF               (F1=0.7277, Acc=0.7578)
+   10% => mBERT                   (F1=0.8034, Acc=0.8807)
+   30% => mBERT                   (F1=0.8816, Acc=0.9194)
+   50% => mBERT                   (F1=0.9148, Acc=0.9470)
+  100% => mBERT                   (F1=0.9474, Acc=0.9724)
+
+
+FULL ACCURACY TABLE
+
+   Dataset %   Basic CRF  Latent CRF      BiLSTM       mBERT
+           1      0.5565      0.5577      0.9322      0.5143
+           5      0.7578      0.7316      0.9331      0.8202
+          10      0.8060      0.7921      0.9413      0.8807
+          30      0.8926      0.8707      0.9736      0.9194
+          50      0.9248      0.9148      0.9846      0.9470
+         100      0.9545      0.9502      0.9913      0.9724
+
+
+FEATURE CONTRIBUTION RANKING (10% data)
+
+  Full Model F1 = 0.7805
+
+  Feature Group         F1 without    F1 Drop
+  Context                   0.7483    +0.0322
+  Word Identity             0.7694    +0.0110
+  Char N-grams              0.7773    +0.0032
+  Morphology                0.7777    +0.0028
+
+
+LEARNED MORPHOLOGICAL PATTERNS  (100% data)
+
+Top 10 suffixes (within-bucket probability):
+  '∅ (empty)' => p=1.0000
+  'ন' => p=0.2606
+  'র' => p=0.2355
+  'া' => p=0.1796
+  'ান' => p=0.1710
+  'ার' => p=0.1497
+  'য়' => p=0.1437
+  'ল' => p=0.1019
+  'ি' => p=0.0975
+  'ীয়' => p=0.0722
+
+Example segmentations on test tokens:
+  উরুগুয়ে             => stem='উরুগুয়ে' | suffix='' | H=0.06
+  জাতীয়               => stem='জাতীয়' | suffix='' | H=0.71
+  ফুটবল                => stem='ফুটবল' | suffix='' | H=0.41
+  দল                   => stem='দল' | suffix='' | H=0.31
+  অ্যান্ড্রু           => stem='অ্যান্ড্রু' | suffix='' | H=0.01
+  জেড                  => stem='জেড' | suffix='' | H=0.05
+  ফায়ার               => stem='ফায়ার' | suffix='' | H=0.79
+  রিয়াল               => stem='রিয়াল' | suffix='' | H=0.37
+  মাদ্রিদ              => stem='মাদ্রিদ' | suffix='' | H=0.02
+  ফুটবল                => stem='ফুটবল' | suffix='' | H=0.41
+  ক্লাব                => stem='ক্লাব' | suffix='' | H=0.12
+  মারভিন               => stem='মারভিন' | suffix='' | H=0.55
+  দি                   => stem='দি' | suffix='' | H=0.30
+  মারসিয়ান            => stem='মারসিয়ান' | suffix='' | H=0.83
+  আদর্শ                => stem='আদর্শ' | suffix='' | H=0.02
